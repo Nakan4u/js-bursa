@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html ng-app="jsbursa">
+<head lang="ru">
+    <meta charset="UTF-8">
+    <title>Студенты курса</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="bower_components/jqueryui/themes/smoothness/jquery-ui.min.css">
+    <link rel="stylesheet" href="bower_components/jqueryui/themes/smoothness/theme.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="bower_components/jqueryui/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="bower_components/lodash/lodash.min.js"></script>
+    <script type="text/javascript" src="bower_components/angular/angular.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body ng-controller="UserListCtrl">
+    <div class="jumbotron">
+        <div class="container">
+            <h1>Студенты курса</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2 active">
+            <h2>Directive</h2>
+            <draggable-list items="active" id="test"></draggable-list>
+        </div>
+        <div class="col-md-2 active">
+            <h2>With repeat</h2>
+            <ul>
+                <li ng-repeat="item in active">
+                    <h3>{{item.name}}</h3>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-2 redcard">
+            <h2>Directive 2</h2>
+            <draggable-list items="redcard"></draggable-list>
+        </div>
+        <div class="col-md-2 redcard">
+            <h2>With repeat 2</h2>
+            <ul>
+                <li ng-repeat="item in redcard">
+                    <h3>{{item.name}}</h3>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-2 removed">
+            <h2>Directive 3</h2>
+            <draggable-list items="removed"></draggable-list>
+        </div>
+        <div class="col-md-2 removed">
+            <h2>With repeat 3</h2>
+            <ul>
+                <li ng-repeat="item in removed">
+                    <h3>{{item.name}}</h3>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
