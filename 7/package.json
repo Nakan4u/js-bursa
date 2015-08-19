@@ -1,0 +1,15 @@
+{
+  "name": "jsbursa",
+  "version": "0.0.0",
+  "description": "test",
+  "main": "index.js",
+  "dependencies": {
+    "eslint": "~0.21.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "author": "me",
+  "license": "BSD-2-Clause"
+}
